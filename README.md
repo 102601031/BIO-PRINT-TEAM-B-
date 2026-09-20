@@ -19,12 +19,6 @@ python app.py
 Open **http://127.0.0.1:5000**. The SQLite database (`bioprint.db`) is
 created automatically on first run.
 
-> **Note on the "executable file" deliverable:** this project is submitted
-> as a website (the brief's stated alternative to a Chrome extension), so
-> the extension is already embedded directly in the site rather than
-> packaged as a separate `.crx`. `run_bioprint.bat` / `run_bioprint.sh`
-> are provided as one-click launchers so no command-line steps are
-> needed to run it.
 
 ## Pages
 
