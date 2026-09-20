@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BioPrint — Dummy Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">BioPrint</span>
+    <span class="page-badge">Dummy Login</span>
+  </div>
+  <div class="brand-tag">
+    live authentication demo — <a class="back-link" href="/">register / enroll an account →</a>
+  </div>
+</header>
+
+<main class="shell">
+
+  <aside class="rail">
+    <section class="panel">
+      <h2><span class="step-num">1</span> Verify password</h2>
+      <p class="hint">A correct password alone is never sufficient — behavior must also match, and no OTP is used anywhere in this flow.</p>
+      <label>Username <input type="text" id="login-username" autocomplete="off" /></label>
+      <label>Password <input type="password" id="login-password" autocomplete="current-password" /></label>
+      <button class="btn primary wide" id="btn-login-password">Verify password</button>
+      <div class="status-line" id="login-status"></div>
+    </section>
+
+    <section class="panel step2-panel hidden" id="step2-panel">
+      <h2><span class="step-num done">✓</span> Password verified</h2>
+      <p class="hint">Signed in as <strong id="verified-username-label"></strong>. Now complete the live behavior check on the right to finish signing in.</p>
+      <button class="btn ghost wide" id="btn-switch-account">Use a different account</button>
+    </section>
+
+    <section class="history" id="history-block" hidden>
+      <h3>Recent attempts on this account</h3>
+      <table class="history-table">
+        <thead><tr><th>Time</th><th>Pwd</th><th>Bot</th><th>Conf.</th><th>Result</th></tr></thead>
+        <tbody id="history-body"></tbody>
+      </table>
+    </section>
+  </aside>
+
+  <section class="stage">
+
+    <div class="stage-empty" id="stage-empty">
+      <div class="scan-icon">◈</div>
+      <p>Verify your password on the left to unlock the live behavior check.</p>
+    </div>
+
+    <div class="capture-widget hidden" id="capture-widget">
+      <div class="capture-head">
+        <h3 id="capture-title">Live behavior check</h3>
+        <div class="capture-sub" id="capture-sub"></div>
+      </div>
+
+      <div class="capture-block">
+        <label class="block-label">1 · Type the phrase exactly as shown — keyboard only</label>
+        <div class="passphrase" id="passphrase-text"></div>
+        <input type="text" id="passphrase-input" class="passphrase-input" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="start typing here…" disabled />
+        <div class="field-note">Paste, drag-drop and autofill are disabled here — real keystrokes are what's being measured.</div>
+        <div class="paste-warning" id="paste-warning">⚠ Pasting isn't allowed — please type the phrase manually.</div>
+      </div>
+
+      <div class="capture-block">
+        <label class="block-label">2 · Click the targets in order</label>
+        <div class="mouse-arena" id="mouse-arena">
+          <div class="arena-hint" id="arena-hint">complete step 1 first</div>
+        </div>
+      </div>
+
+      <button class="btn primary wide" id="btn-submit-capture" disabled>Submit &amp; verify</button>
+    </div>
+
+    <div class="result-dashboard hidden" id="result-dashboard">
+      <div class="verdict-banner" id="verdict-banner">
+        <div class="verdict-word" id="verdict-word">—</div>
+        <div class="verdict-sub" id="verdict-sub"></div>
+      </div>
+
+      <div class="confidence-block">
+        <div class="confidence-label">
+          <span>Behavioral confidence</span>
+          <span class="mono" id="confidence-number">0</span>
+        </div>
+        <div class="confidence-bar"><div class="confidence-fill" id="confidence-fill"></div>
+          <div class="threshold-mark" id="threshold-mark"></div>
+        </div>
+      </div>
+
+      <div class="breakdown" id="breakdown-block">
+        <h4>Signal breakdown <span class="hint-inline">(deviation from enrolled baseline)</span></h4>
+        <div id="breakdown-rows"></div>
+      </div>
+
+      <div class="explanation" id="explanation-block">
+        <h4>Explanation</h4>
+        <pre id="explanation-text"></pre>
+      </div>
+
+      <button class="btn ghost" id="btn-try-again">Run another attempt</button>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footnote">
+  local SQLite backend · statistical behavioral fingerprinting · no OTP / secondary verification used · accept threshold {{ threshold }}
+</footer>
+
+<script src="{{ url_for('static', filename='js/capture.js') }}"></script>
+<script src="{{ url_for('static', filename='js/dummy_login.js') }}"></script>
+</body>
+</html>

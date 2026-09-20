@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BioPrint — Behavior-Based Login Security</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">BioPrint</span>
+  </div>
+  <div class="brand-tag">passwordless-proof identity through behavioral biometrics</div>
+</header>
+
+<main class="shell">
+
+  <!-- ============ LEFT RAIL : identity + tabs ============ -->
+  <aside class="rail">
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="register">Register</button>
+      <button class="tab" data-tab="enroll">Enroll</button>
+    </nav>
+    <a class="dummy-login-link" href="/dummy-login">Go to Dummy Login page →</a>
+
+    <section class="panel" data-panel="register">
+      <h2>Create account</h2>
+      <p class="hint">Password + behavior are checked independently. Neither alone is enough at login.</p>
+      <label>Username <input type="text" id="reg-username" autocomplete="off" /></label>
+      <label>Password <input type="password" id="reg-password" autocomplete="new-password" /></label>
+      <button class="btn primary" id="btn-register">Create account</button>
+      <div class="status-line" id="reg-status"></div>
+    </section>
+
+    <section class="panel hidden" data-panel="enroll">
+      <h2>Enroll baseline</h2>
+      <p class="hint">Complete <span id="rounds-required">{{ rounds }}</span> short rounds so BioPrint can learn how <em>you</em> move and type — independent of your password.</p>
+      <label>Username <input type="text" id="enroll-username" autocomplete="off" /></label>
+      <button class="btn primary wide" id="btn-start-enroll">Start / resume enrollment</button>
+      <div class="round-tracker" id="enroll-round-tracker"></div>
+      <div class="status-line" id="enroll-status"></div>
+    </section>
+  </aside>
+
+  <!-- ============ MAIN : the behavior capture surface ============ -->
+  <section class="stage">
+
+    <div class="stage-empty" id="stage-empty">
+      <div class="scan-icon">◈</div>
+      <p>Register an account, then enroll your behavioral baseline, to begin.</p>
+    </div>
+
+    <!-- Behavior capture widget (shared by enroll + login) -->
+    <div class="capture-widget hidden" id="capture-widget">
+      <div class="capture-head">
+        <h3 id="capture-title">Behavioral capture</h3>
+        <div class="capture-sub" id="capture-sub"></div>
+      </div>
+
+      <div class="capture-block">
+        <label class="block-label">1 · Type the phrase exactly as shown — keyboard only</label>
+        <div class="passphrase" id="passphrase-text"></div>
+        <input type="text" id="passphrase-input" class="passphrase-input" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="start typing here…" disabled />
+        <div class="field-note">Paste, drag-drop and autofill are disabled here — real keystrokes are what's being measured.</div>
+        <div class="paste-warning" id="paste-warning">⚠ Pasting isn't allowed — please type the phrase manually.</div>
+      </div>
+
+      <div class="capture-block">
+        <label class="block-label">2 · Click the targets in order</label>
+        <div class="mouse-arena" id="mouse-arena">
+          <div class="arena-hint" id="arena-hint">complete step 1 first</div>
+        </div>
+      </div>
+
+      <button class="btn primary wide" id="btn-submit-capture" disabled>Submit sample</button>
+    </div>
+
+    <!-- placeholder kept so shared capture.js / resetStage() selectors resolve -->
+    <div class="result-dashboard hidden" id="result-dashboard"></div>
+
+  </section>
+</main>
+
+<footer class="footnote">
+  local SQLite backend · statistical behavioral fingerprinting · no OTP / secondary verification used
+</footer>
+
+<script src="{{ url_for('static', filename='js/capture.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
