@@ -1,0 +1,1407 @@
+{
+  "before": {
+    "summary": {
+      "genuine_attempts": 20,
+      "genuine_accepted": 15,
+      "genuine_accept_rate": 0.75,
+      "false_reject_rate": 0.25,
+      "impostor_attempts": 60,
+      "impostor_accepted": 18,
+      "false_accept_rate": 0.3
+    },
+    "threshold_sweep": [
+      {
+        "threshold": 30,
+        "far": 0.5167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 35,
+        "far": 0.5167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 40,
+        "far": 0.5,
+        "frr": 0.2
+      },
+      {
+        "threshold": 45,
+        "far": 0.4833,
+        "frr": 0.2
+      },
+      {
+        "threshold": 50,
+        "far": 0.4333,
+        "frr": 0.2
+      },
+      {
+        "threshold": 55,
+        "far": 0.3167,
+        "frr": 0.25
+      },
+      {
+        "threshold": 60,
+        "far": 0.2833,
+        "frr": 0.25
+      },
+      {
+        "threshold": 65,
+        "far": 0.1833,
+        "frr": 0.3
+      },
+      {
+        "threshold": 70,
+        "far": 0.1,
+        "frr": 0.35
+      },
+      {
+        "threshold": 75,
+        "far": 0.0667,
+        "frr": 0.5
+      },
+      {
+        "threshold": 80,
+        "far": 0.0333,
+        "frr": 0.55
+      },
+      {
+        "threshold": 85,
+        "far": 0.0,
+        "frr": 0.75
+      },
+      {
+        "threshold": 90,
+        "far": 0.0,
+        "frr": 0.95
+      }
+    ],
+    "genuine_detail": [
+      {
+        "username": "ram",
+        "round_held_out": 1,
+        "confidence": 35.9,
+        "accepted": false
+      },
+      {
+        "username": "ram",
+        "round_held_out": 2,
+        "confidence": 88.2,
+        "accepted": true
+      },
+      {
+        "username": "ram",
+        "round_held_out": 3,
+        "confidence": 86.1,
+        "accepted": true
+      },
+      {
+        "username": "ram",
+        "round_held_out": 4,
+        "confidence": 56.5,
+        "accepted": false
+      },
+      {
+        "username": "ram",
+        "round_held_out": 5,
+        "confidence": 81.3,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 1,
+        "confidence": 71.5,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 2,
+        "confidence": 52.6,
+        "accepted": false
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 3,
+        "confidence": 63.6,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 4,
+        "confidence": 90.2,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 5,
+        "confidence": 74.5,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 1,
+        "confidence": 80.9,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 2,
+        "confidence": 86.1,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 3,
+        "confidence": 72.4,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 4,
+        "confidence": 27.4,
+        "accepted": false
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 5,
+        "confidence": 68.1,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 1,
+        "confidence": 31.7,
+        "accepted": false
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 2,
+        "confidence": 89.1,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 3,
+        "confidence": 80.7,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 4,
+        "confidence": 81.3,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 5,
+        "confidence": 79.7,
+        "accepted": true
+      }
+    ],
+    "impostor_detail": [
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 1,
+        "confidence": 70.3,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 2,
+        "confidence": 81.3,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 3,
+        "confidence": 69.2,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 4,
+        "confidence": 76.4,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 5,
+        "confidence": 81.5,
+        "accepted": true
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 1,
+        "confidence": 25.9,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 2,
+        "confidence": 31.9,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 3,
+        "confidence": 32.3,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 4,
+        "confidence": 24.4,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 5,
+        "confidence": 30.7,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 1,
+        "confidence": 27.5,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 2,
+        "confidence": 54.2,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 3,
+        "confidence": 41.4,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 4,
+        "confidence": 39.1,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 5,
+        "confidence": 64.4,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 1,
+        "confidence": 26.6,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 2,
+        "confidence": 63.1,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 3,
+        "confidence": 62.5,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 4,
+        "confidence": 54.2,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 5,
+        "confidence": 47.8,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 1,
+        "confidence": 30.0,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 2,
+        "confidence": 29.2,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 3,
+        "confidence": 32.8,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 4,
+        "confidence": 26.5,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 5,
+        "confidence": 33.4,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 1,
+        "confidence": 25.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 2,
+        "confidence": 53.7,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 3,
+        "confidence": 33.3,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 4,
+        "confidence": 43.7,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 5,
+        "confidence": 62.4,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 1,
+        "confidence": 22.6,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 2,
+        "confidence": 39.6,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 3,
+        "confidence": 33.1,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 4,
+        "confidence": 36.5,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 5,
+        "confidence": 32.7,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 1,
+        "confidence": 58.8,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 2,
+        "confidence": 38.0,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 3,
+        "confidence": 55.3,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 4,
+        "confidence": 63.8,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 5,
+        "confidence": 51.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 1,
+        "confidence": 28.0,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 2,
+        "confidence": 65.1,
+        "accepted": true
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 3,
+        "confidence": 50.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 4,
+        "confidence": 67.0,
+        "accepted": true
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 5,
+        "confidence": 69.9,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 1,
+        "confidence": 30.7,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 2,
+        "confidence": 53.3,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 3,
+        "confidence": 42.0,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 4,
+        "confidence": 53.8,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 5,
+        "confidence": 42.3,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 1,
+        "confidence": 64.2,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 2,
+        "confidence": 54.2,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 3,
+        "confidence": 71.9,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 4,
+        "confidence": 76.6,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 5,
+        "confidence": 67.8,
+        "accepted": true
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 1,
+        "confidence": 45.4,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 2,
+        "confidence": 45.3,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 3,
+        "confidence": 45.5,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 4,
+        "confidence": 40.1,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 5,
+        "confidence": 40.5,
+        "accepted": false
+      }
+    ]
+  },
+  "after": {
+    "summary": {
+      "genuine_attempts": 20,
+      "genuine_accepted": 16,
+      "genuine_accept_rate": 0.8,
+      "false_reject_rate": 0.2,
+      "impostor_attempts": 60,
+      "impostor_accepted": 12,
+      "false_accept_rate": 0.2
+    },
+    "threshold": 56,
+    "weights": {
+      "ks_mean_dwell": 2.0,
+      "ks_std_dwell": 0.354,
+      "ks_mean_flight": 0.306,
+      "ks_std_flight": 0.302,
+      "ks_typing_speed": 0.352,
+      "ks_backspace_rate": 0.306,
+      "ms_avg_velocity": 0.304,
+      "ms_std_velocity": 0.318,
+      "ms_avg_accel": 0.32,
+      "ms_straightness": 0.433,
+      "ms_avg_click_hold": 0.379,
+      "ms_jitter": 0.313
+    },
+    "discriminability": {
+      "ks_mean_dwell": 55.075868987001705,
+      "ks_std_dwell": 1.7612514386108158,
+      "ks_mean_flight": 0.19661848125282178,
+      "ks_std_flight": 0.04994605288185952,
+      "ks_typing_speed": 1.6987917979352667,
+      "ks_backspace_rate": 0.17955946607480064,
+      "ms_avg_velocity": 0.1214217684251216,
+      "ms_std_velocity": 0.5870575482456385,
+      "ms_avg_accel": 0.6427268665705264,
+      "ms_straightness": 4.323706662000829,
+      "ms_avg_click_hold": 2.5710741844801124,
+      "ms_jitter": 0.4324218703239305
+    },
+    "threshold_sweep": [
+      {
+        "threshold": 20,
+        "far": 0.5167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 22,
+        "far": 0.5167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 24,
+        "far": 0.5,
+        "frr": 0.2
+      },
+      {
+        "threshold": 26,
+        "far": 0.4667,
+        "frr": 0.2
+      },
+      {
+        "threshold": 28,
+        "far": 0.4333,
+        "frr": 0.2
+      },
+      {
+        "threshold": 30,
+        "far": 0.4167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 32,
+        "far": 0.4,
+        "frr": 0.2
+      },
+      {
+        "threshold": 34,
+        "far": 0.4,
+        "frr": 0.2
+      },
+      {
+        "threshold": 36,
+        "far": 0.3833,
+        "frr": 0.2
+      },
+      {
+        "threshold": 38,
+        "far": 0.3667,
+        "frr": 0.2
+      },
+      {
+        "threshold": 40,
+        "far": 0.35,
+        "frr": 0.2
+      },
+      {
+        "threshold": 42,
+        "far": 0.35,
+        "frr": 0.2
+      },
+      {
+        "threshold": 44,
+        "far": 0.3,
+        "frr": 0.2
+      },
+      {
+        "threshold": 46,
+        "far": 0.3,
+        "frr": 0.2
+      },
+      {
+        "threshold": 48,
+        "far": 0.2667,
+        "frr": 0.2
+      },
+      {
+        "threshold": 50,
+        "far": 0.2667,
+        "frr": 0.2
+      },
+      {
+        "threshold": 52,
+        "far": 0.25,
+        "frr": 0.2
+      },
+      {
+        "threshold": 54,
+        "far": 0.2167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 56,
+        "far": 0.2,
+        "frr": 0.2
+      },
+      {
+        "threshold": 58,
+        "far": 0.1333,
+        "frr": 0.2
+      },
+      {
+        "threshold": 60,
+        "far": 0.1167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 62,
+        "far": 0.1167,
+        "frr": 0.2
+      },
+      {
+        "threshold": 64,
+        "far": 0.1167,
+        "frr": 0.25
+      },
+      {
+        "threshold": 66,
+        "far": 0.1,
+        "frr": 0.25
+      },
+      {
+        "threshold": 68,
+        "far": 0.1,
+        "frr": 0.25
+      },
+      {
+        "threshold": 70,
+        "far": 0.0833,
+        "frr": 0.25
+      },
+      {
+        "threshold": 72,
+        "far": 0.0833,
+        "frr": 0.25
+      },
+      {
+        "threshold": 74,
+        "far": 0.0833,
+        "frr": 0.3
+      },
+      {
+        "threshold": 76,
+        "far": 0.0667,
+        "frr": 0.35
+      },
+      {
+        "threshold": 78,
+        "far": 0.0167,
+        "frr": 0.35
+      },
+      {
+        "threshold": 80,
+        "far": 0.0167,
+        "frr": 0.4
+      },
+      {
+        "threshold": 82,
+        "far": 0.0167,
+        "frr": 0.45
+      },
+      {
+        "threshold": 84,
+        "far": 0.0167,
+        "frr": 0.6
+      },
+      {
+        "threshold": 86,
+        "far": 0.0,
+        "frr": 0.65
+      },
+      {
+        "threshold": 88,
+        "far": 0.0,
+        "frr": 0.75
+      },
+      {
+        "threshold": 90,
+        "far": 0.0,
+        "frr": 0.85
+      },
+      {
+        "threshold": 92,
+        "far": 0.0,
+        "frr": 1.0
+      },
+      {
+        "threshold": 94,
+        "far": 0.0,
+        "frr": 1.0
+      }
+    ],
+    "genuine_detail": [
+      {
+        "username": "ram",
+        "round_held_out": 1,
+        "confidence": 48.2,
+        "accepted": false
+      },
+      {
+        "username": "ram",
+        "round_held_out": 2,
+        "confidence": 91.6,
+        "accepted": true
+      },
+      {
+        "username": "ram",
+        "round_held_out": 3,
+        "confidence": 89.8,
+        "accepted": true
+      },
+      {
+        "username": "ram",
+        "round_held_out": 4,
+        "confidence": 64.9,
+        "accepted": false
+      },
+      {
+        "username": "ram",
+        "round_held_out": 5,
+        "confidence": 84.5,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 1,
+        "confidence": 79.3,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 2,
+        "confidence": 63.7,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 3,
+        "confidence": 73.0,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 4,
+        "confidence": 91.3,
+        "accepted": true
+      },
+      {
+        "username": "teeth",
+        "round_held_out": 5,
+        "confidence": 82.6,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 1,
+        "confidence": 83.6,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 2,
+        "confidence": 88.6,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 3,
+        "confidence": 81.8,
+        "accepted": true
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 4,
+        "confidence": 40.6,
+        "accepted": false
+      },
+      {
+        "username": "Zed",
+        "round_held_out": 5,
+        "confidence": 75.6,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 1,
+        "confidence": 42.1,
+        "accepted": false
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 2,
+        "confidence": 90.7,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 3,
+        "confidence": 86.1,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 4,
+        "confidence": 86.2,
+        "accepted": true
+      },
+      {
+        "username": "abhinanth",
+        "round_held_out": 5,
+        "confidence": 83.7,
+        "accepted": true
+      }
+    ],
+    "impostor_detail": [
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 1,
+        "confidence": 76.8,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 2,
+        "confidence": 84.0,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 3,
+        "confidence": 74.6,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 4,
+        "confidence": 77.1,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "ram",
+        "attacker_round": 5,
+        "confidence": 76.6,
+        "accepted": true
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 1,
+        "confidence": 15.9,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 2,
+        "confidence": 17.7,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 3,
+        "confidence": 18.3,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 4,
+        "confidence": 14.2,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "ram",
+        "attacker_round": 5,
+        "confidence": 18.1,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 1,
+        "confidence": 34.7,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 2,
+        "confidence": 50.0,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 3,
+        "confidence": 41.2,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 4,
+        "confidence": 37.5,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "ram",
+        "attacker_round": 5,
+        "confidence": 56.5,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 1,
+        "confidence": 42.0,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 2,
+        "confidence": 65.8,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 3,
+        "confidence": 69.3,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 4,
+        "confidence": 57.7,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "teeth",
+        "attacker_round": 5,
+        "confidence": 53.6,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 1,
+        "confidence": 17.9,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 2,
+        "confidence": 17.0,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 3,
+        "confidence": 18.7,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 4,
+        "confidence": 14.9,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "teeth",
+        "attacker_round": 5,
+        "confidence": 19.4,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 1,
+        "confidence": 26.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 2,
+        "confidence": 35.2,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 3,
+        "confidence": 25.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 4,
+        "confidence": 26.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "teeth",
+        "attacker_round": 5,
+        "confidence": 37.7,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 1,
+        "confidence": 15.6,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 2,
+        "confidence": 22.1,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 3,
+        "confidence": 19.2,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 4,
+        "confidence": 21.2,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "Zed",
+        "attacker_round": 5,
+        "confidence": 19.9,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 1,
+        "confidence": 28.2,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 2,
+        "confidence": 21.4,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 3,
+        "confidence": 27.3,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 4,
+        "confidence": 30.8,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "Zed",
+        "attacker_round": 5,
+        "confidence": 26.9,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 1,
+        "confidence": 18.3,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 2,
+        "confidence": 38.3,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 3,
+        "confidence": 32.1,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 4,
+        "confidence": 43.5,
+        "accepted": false
+      },
+      {
+        "attacker": "abhinanth",
+        "victim": "Zed",
+        "attacker_round": 5,
+        "confidence": 43.5,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 1,
+        "confidence": 31.1,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 2,
+        "confidence": 55.7,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 3,
+        "confidence": 43.5,
+        "accepted": false
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 4,
+        "confidence": 58.0,
+        "accepted": true
+      },
+      {
+        "attacker": "ram",
+        "victim": "abhinanth",
+        "attacker_round": 5,
+        "confidence": 49.6,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 1,
+        "confidence": 52.9,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 2,
+        "confidence": 46.9,
+        "accepted": false
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 3,
+        "confidence": 57.1,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 4,
+        "confidence": 56.7,
+        "accepted": true
+      },
+      {
+        "attacker": "teeth",
+        "victim": "abhinanth",
+        "attacker_round": 5,
+        "confidence": 46.4,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 1,
+        "confidence": 24.7,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 2,
+        "confidence": 24.1,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 3,
+        "confidence": 23.8,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 4,
+        "confidence": 21.3,
+        "accepted": false
+      },
+      {
+        "attacker": "Zed",
+        "victim": "abhinanth",
+        "attacker_round": 5,
+        "confidence": 21.8,
+        "accepted": false
+      }
+    ]
+  },
+  "real_logged_attempts": {
+    "total_attempts": 37,
+    "correct_password_attempts": 37,
+    "flagged_as_bot": 0,
+    "accepted": 19,
+    "correct_password_but_behaviorally_blocked": 18
+  }
+}
